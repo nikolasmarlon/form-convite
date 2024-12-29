@@ -1,0 +1,30 @@
+#app{
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 1.25rem;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+aside{
+    padding: 2rem;
+
+    height: 100%;
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    border-radius: 12px;
+}
+
+main{
+    overflow: auto;
+
+    border-radius: 12px;
+    padding: 80px 130px;
+    background-color: #212427;
+}
+
