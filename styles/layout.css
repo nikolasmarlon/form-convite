@@ -18,6 +18,17 @@ aside{
     
 
     border-radius: 12px;
+
+
+    & h1{
+        font: var(--logo);
+        color: var(--pink)
+    }
+
+    & p{
+        font: 300 1rem/1.6 var(--font-body);
+        color: var(--text-heading);
+    }
 }
 
 main{
