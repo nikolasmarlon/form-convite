@@ -1,0 +1,25 @@
+
+
+input, textarea, select {
+    appearance: none;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid var(--input-stroke);
+
+    color: var(--input-placeholder);
+
+    background-color: var(--input-base);
+    padding: 0.813rem 1rem;
+
+    font: var(--body-md);
+}
+
+label{
+
+    display: block; /* Display block pq label é do tipo inline */
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-bottom: .75rem;
+}
+

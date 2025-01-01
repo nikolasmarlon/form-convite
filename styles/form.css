@@ -1,0 +1,26 @@
+@import url(filds/index.css);
+
+fieldset{
+    border: none;
+
+    display: grid;
+    gap: 1rem;
+}
+
+legend{
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    margin-bottom: 1.625rem;
+
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    
+    & svg path {
+        stroke: var(--input-placeholder);
+    }
+}
+
+fieldset + fieldset{
+    margin-top: 3rem;
+}

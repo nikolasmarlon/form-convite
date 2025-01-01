@@ -22,7 +22,8 @@ aside{
 
     & h1{
         font: var(--logo);
-        color: var(--pink)
+        color: var(--pink);
+        margin-top: 16px;
     }
 
     & p{
@@ -33,9 +34,16 @@ aside{
 
 main{
     overflow: auto;
+    
 
     border-radius: 12px;
     padding: 80px 130px;
     background-color: #212427;
+
+    & h1{
+        font: var(--heading-md);
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+    }
 }
 
