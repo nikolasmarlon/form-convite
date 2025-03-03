@@ -15,6 +15,10 @@ input, textarea, select {
     font: var(--body-md);
 }
 
+input{
+    height: 48px;
+}
+
 label{
 
     display: block; /* Display block pq label é do tipo inline */
