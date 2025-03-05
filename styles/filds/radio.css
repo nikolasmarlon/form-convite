@@ -61,3 +61,119 @@
     color: #fff;
     font: var(--body-sm-bold);
 }
+
+
+
+
+/* seletor de cores */
+.color-picker {
+    display: flex;
+    gap: 10px;
+}
+
+/* Esconder os radio buttons */
+.color-picker input {
+    display: none;
+}
+
+/* Estilizar os círculos */
+.color-label {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+/* Círculo interno (cor) */
+.color-inner {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+/* Quando passar o mouse, a borda do círculo maior fica azul claro */
+.color-label:hover {
+    border-color: #4A90E2;
+}
+
+/* Quando o círculo for selecionado */
+.color-picker input:checked + .color-label {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.8);
+}
+
+/* Definir cores do círculo interno */
+.color-label[data-color="red"] .color-inner { background: red; }
+.color-label[data-color="blue"] .color-inner { background: blue; }
+.color-label[data-color="green"] .color-inner { background: green; }
+.color-label[data-color="yellow"] .color-inner { background: yellow; }
+.color-label[data-color="purple"] .color-inner { background: purple; }
+.color-label[data-color="orange"] .color-inner { background: orange; }
+.color-label[data-color="pink"] .color-inner { background: pink; }
+.color-label[data-color="brown"] .color-inner { background: brown; }
+.color-label[data-color="gray"] .color-inner { background: gray; }
+.color-label[data-color="black"] .color-inner { background: black; }
+.color-label[data-color="white"] .color-inner { background: white; border: 1px solid #aaa; }
+
+/* fim seletor de cores */
+
+
+
+
+
+/* seletor de temas */
+.temas-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.tema-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--shape-button);
+    border-radius: 8px;
+    padding: 4px;
+    border: 2px solid var(--input-stroke);
+    cursor: pointer;
+    transition: border 0.3s;
+    text-align: center;
+    position: relative;
+}
+
+/* Esconde o input radio padrão */
+.tema-inner input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+/* Imagem no topo */
+.tema-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Texto abaixo */
+.tema-inner span {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    margin-top: 5px;
+}
+
+/* Quando o input radio está marcado, adiciona a borda azul */
+.tema-inner:has(input:checked) {
+    border: 2px solid var(--brand-light);
+}
+
+/* fim seletor de temas */
