@@ -1,0 +1,56 @@
+/* seletor de cores */
+.color-picker {
+    display: flex;
+    gap: 10px;
+}
+
+/* Esconder os radio buttons */
+.color-picker input {
+    display: none;
+}
+
+/* Estilizar os círculos */
+.color-label {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--shape-button);
+    border: 2px solid var(--shape-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+/* Círculo interno (cor) */
+.color-inner {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+/* Quando passar o mouse, a borda do círculo maior fica azul claro */
+.color-label:hover {
+    border-color: var(--brand-light);
+}
+
+/* Quando o círculo for selecionado */
+.color-picker input:checked + .color-label {
+    border-color: var(--brand-light);
+}
+
+/* Definir cores do círculo interno */
+.color-label[data-color="brand-light"] .color-inner { background: var(--brand-light); }
+.color-label[data-color="navy"] .color-inner { background: var(--navy); }
+.color-label[data-color="purple"] .color-inner { background: var(--purple); }
+.color-label[data-color="fuschia"] .color-inner { background: var(--fuschia); }
+.color-label[data-color="pink"] .color-inner { background: var(--pink); }
+.color-label[data-color="danger"] .color-inner { background: var(--danger); }
+.color-label[data-color="orange"] .color-inner { background: var(--orange); }
+.color-label[data-color="yellow"] .color-inner { background: var(--yellow); }
+.color-label[data-color="lime"] .color-inner { background: var(--lime);; }
+.color-label[data-color="green"] .color-inner { background: var(--green); }
+.color-label[data-color="cyan"] .color-inner { background: var(--cyan); }
+
+/* fim seletor de cores */
