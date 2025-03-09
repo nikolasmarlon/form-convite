@@ -52,5 +52,4 @@
 .color-label[data-color="lime"] .color-inner { background: var(--lime);; }
 .color-label[data-color="green"] .color-inner { background: var(--green); }
 .color-label[data-color="cyan"] .color-inner { background: var(--cyan); }
-
 /* fim seletor de cores */
