@@ -1,0 +1,42 @@
+/* Upload de Foto */
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.upload-label {
+    font-size: 0.875rem;
+}
+
+.upload-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--shape-button);
+    color: var(--text-heading);
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: -1px;
+}
+
+.upload-button:hover {
+    background: #444;
+}
+
+.upload-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-text {
+    font-size: 0.875rem;
+    color: #777;
+}
