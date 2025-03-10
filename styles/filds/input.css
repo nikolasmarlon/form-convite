@@ -17,6 +17,11 @@ input, textarea, select {
 
 input{
     height: 48px;
+
+
+    &:invalid{
+        border: 0.125rem solid var(--danger);
+    }
 }
 
 label{
@@ -27,4 +32,3 @@ label{
     margin-bottom: .75rem;
 }
 
- 
